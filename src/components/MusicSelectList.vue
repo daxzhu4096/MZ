@@ -57,7 +57,7 @@ export default {
 </script>
 <style scoped>
 .container {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -91,5 +91,13 @@ header .header-btn-wrap span {
 }
 .list-item>div:last-child{
   border-bottom: none;
+}
+.list-item::-webkit-scrollbar{
+  background: transparent;
+  overflow: auto;
+}
+.list::-webkit-scrollbar{
+  background: transparent;
+  overflow: auto;
 }
 </style>
