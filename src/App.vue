@@ -19,28 +19,29 @@ export default {
   name: "app",
   components: { Footer, Player },
   computed: {
-    isShow(){
-      return !this.$store.state.playerShow
+    isShow() {
+      return !this.$store.state.playerShow;
     }
   },
   methods: {
-    ChangePlayerShow(){
-      this.$store.dispatch('changePlayerShow')
+    ChangePlayerShow() {
+      this.$store.dispatch("changePlayerShow");
     }
   },
   created() {
     fetch("http://api.jirengu.com/fm/getChannels.php")
       .then(response => response.json())
       .then(data => {
-        this.$store.dispatch('setChannels',data.channels.reverse()) 
-      }).catch(e => console.log(e));
+        this.$store.dispatch("setChannels", data.channels.reverse());
+      })
+      .catch(e => console.log(e));
     var date = new Date();
-    var date1 = new Date('2017-12-31')
-    var days = parseInt((date.getTime() - date1.getTime())/86400000) + 1911
+    var date1 = new Date("2017-12-31");
+    var days = parseInt((date.getTime() - date1.getTime()) / 86400000) + 1911;
     fetch(`http://qust.me:8889/api/one/vol/${days}`)
       .then(response => response.json())
       .then(data => {
-        this.$store.dispatch('setOne',data)
+        this.$store.dispatch("setOne", data);
       })
       .catch(e => {
         console.log(e);
@@ -51,29 +52,32 @@ export default {
 
 <style>
 .showPlayer-enter-active {
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .showPlayer-leave-active {
-  transition: all .2 ease;
+  transition: all 0.2 ease;
 }
-.showPlayer-enter, .showPlayer-leave-to {
+.showPlayer-enter,
+.showPlayer-leave-to {
   transform: translateX(400px);
   opacity: 0;
 }
 .hidePlayer-enter-active {
-  transition: all .4s ease-out;
+  transition: all 0.4s ease-out;
 }
 .hidePlayer-leave-active {
   transition: all 0 ease;
 }
-.hidePlayer-enter, .hidePlayer-leave-to {
+.hidePlayer-enter,
+.hidePlayer-leave-to {
   transform: translateX(-400px);
   opacity: 0;
 }
 #app {
   width: 414px;
-  height: 100vh;
+  height: 736px;
   margin: 0 auto;
   position: relative;
+  box-shadow: 0px 0px 6px #888787;
 }
 </style>

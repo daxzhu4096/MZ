@@ -52,6 +52,10 @@ article {
   right: 0;
   bottom: 54px;
   left: 0;
+  overflow: auto;
+}
+article::-webkit-scrollbar{
+  background: transparent;
 }
 .more {
   font-size: 14px;

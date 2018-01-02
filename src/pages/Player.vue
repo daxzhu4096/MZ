@@ -242,7 +242,11 @@ export default {
 }
 #player {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 article {
   position: absolute;
@@ -250,7 +254,6 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh;
 }
 .bg-img {
   position: absolute;

@@ -39,7 +39,10 @@ article {
   left: 0;
   right: 0;
   bottom: 54px;
-  overflow: scroll;
+  overflow: auto;
+}
+article::-webkit-scrollbar{
+  background: transparent;
 }
 .header-middle-wrap {
   border: 1px solid #fff;
