@@ -52,25 +52,25 @@ export default {
 
 <style>
 .showPlayer-enter-active {
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
 }
 .showPlayer-leave-active {
   transition: all 0.2 ease;
 }
 .showPlayer-enter,
 .showPlayer-leave-to {
-  transform: translateX(400px);
+  transform: translateX(100px);
   opacity: 0;
 }
 .hidePlayer-enter-active {
-  transition: all 0.4s ease-out;
+  transition: all 0.1s ease-out;
 }
 .hidePlayer-leave-active {
   transition: all 0 ease;
 }
 .hidePlayer-enter,
 .hidePlayer-leave-to {
-  transform: translateX(-400px);
+  transform: translateX(-100px);
   opacity: 0;
 }
 #app {
