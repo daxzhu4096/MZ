@@ -2,15 +2,25 @@
 
 > A Vue.js project
 ## 预览
-![](./img (9).png)
-![](./img (8).png)
-![](./img (7).png)
-![](./img (6).png)
-![](./img (5).png)
-![](./img (4).png)
-![](./img (3).png)
-![](./img (2).png)
-![](./img (1).png)
+
+<img src="./pic/img1.png" width="300px">
+
+<img src="./pic/img3.png" width="300px">
+
+<img src="./pic/img2.png" width="300px">
+
+<img src="./pic/img4.png" width="300px">
+
+<img src="./pic/img5.png" width="300px">
+
+<img src="./pic/img6.png" width="300px">
+
+<img src="./pic/img7.png" width="300px">
+
+<img src="./pic/img8.png" width="300px">
+
+<img src="./pic/img9.png" width="300px">
+
 ## Build Setup
 
 ``` bash
