@@ -1,7 +1,8 @@
 # wangyiyun-music
 
 > A Vue.js project
-
+## 预览
+[](./1.gif)
 ## Build Setup
 
 ``` bash
